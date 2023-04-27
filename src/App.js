@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Profile from './Profile.js/Profile';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+const data = {
+  fullname:"Achref lach",
+  bio:"This is my bio",
+  Profession: "Instructor"
 }
 
+
+
+
+
+
+function App() {
+  const handleName = (name) => {
+    alert(`My name is ${name}`)
+  }
+  return (
+    <div className="App">
+      <h1>TEST</h1>
+      <butto onClick={handleName("Achref")}>Show my name</butto>
+    <Profile fullname={"Achref lach"} bio={"this is bio"} profession={"Instructor"} />
+    <img src={paulo} alt="" />
+    <Profile />
+    </div>
+  )
+}
 export default App;
